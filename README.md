@@ -67,7 +67,7 @@ Each endpoint requires a SimpleJWT Token for authorization. Pass the token in th
 ```jsx
 {'Authorization': 'JWT <token>'}
 ```
-<br>
+
 
 ### Endpoints for `api` app
 ```jsx
