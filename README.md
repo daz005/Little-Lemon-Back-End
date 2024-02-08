@@ -2,16 +2,12 @@
 
 ## Back-End Project Description
 
-This project showcases 
-
 This website showcased the back-end of implementing a booking application on the Little Lemon Website. This is a Django application for managing a restaurant's menu and bookings, which includes basic functionalities such as creating and viewing menu items, as well as handling reservations.
 
 Django: Web framework for backend development. <br>
 Django REST Framework: API development framework built on top of Django. <br>
 Pipenv: Virtual environment management tool. <br>
 Djoser: Django REST Framework extension for user authentication. <br>
-
-
 <br> <br>
 
 # Installation
@@ -63,7 +59,7 @@ For authenticated API requests in the view of the restaurant app, a username and
 
 Inside the restaurant app folder, create a file called .env and place the code inside it
 ```jsx
-USERNAME=yout_username
+USERNAME=your_username
 PASSWORD=your_password
 ```
 <aside>💡 replace "your_username" and "your_password" with a valid username and password respectively</aside>
@@ -79,11 +75,6 @@ Each endpoint requires a SimpleJWT Token for authorization. Pass the token in th
 ```jsx
 {'Authorization': 'JWT <token>'}
 ```
-<br>
-
-In Insomnia, add the token as follows
-
-![Untitled](assets/insomnia.png)
 <br>
 
 ### Endpoints for `api` app
