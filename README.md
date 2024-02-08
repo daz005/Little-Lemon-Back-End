@@ -104,46 +104,34 @@ http:127.0.0.1:8000/api/bookings/{bookingId}
 | DELETE | Delete the booking | Yes | 200 |
 
 
-### Endpoints for `djoser` app
-```jsx
-http://127.0.0.1:8000/auth/users/
-http://127.0.0.1:8000/auth/users/me/
-http://127.0.0.1:8000/auth/users/confirm/
-http://127.0.0.1:8000/auth/users/resend_activation/
-http://127.0.0.1:8000/auth/users/set_password/
-http://127.0.0.1:8000/auth/users/reset_password/
-http://127.0.0.1:8000/auth/users/reset_password_confirm/
-http://127.0.0.1:8000/auth/users/set_username/
-http://127.0.0.1:8000/auth/users/reset_username/
-http://127.0.0.1:8000/auth/users/reset_username_confirm/
-```
-<br>
-http://127.0.0.1:8000/auth/users/
-| Method | Action | STATUS CODE | TOKEN AUTH |
-| --- | --- | --- | --- |
-| GET | Retrieves all users | 200 | No |
-| POST | Creates a user | 201 | No |
-<br> 
 ### Endpoints for `simplejwt` app
 ```jsx
 http:127.0.0.1:8000/api/token/login/
 http:127.0.0.1:8000/api/token/refresh/
 ```
 <br>
+
 http://127.0.0.1:8000/api/token/login/
 | Method | Action | TOKEN AUTH | STATUS CODE |
 | --- | --- | --- | --- |
 | POST | Generates access token and refresh token | Yes | 201 |
 <br>
+
 http://127.0.0.1:8000/api/token/refresh/
 | Method | Action | TOKEN AUTH | STATUS CODE |
 | --- | --- | --- | --- |
 | POST | Generates a new access token | Yes | 201 |
 <br>
+
 # Testing
 There are a total of 12 tests to ensure that each API endpoint and each of its allowed HTTP methods work properly.
 <br>
 
+Run the tests
+```jsx
+python manage.py test
+```
+<br>
 Run the tests
 ```jsx
 python manage.py test
