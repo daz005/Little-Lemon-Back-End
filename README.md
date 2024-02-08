@@ -6,21 +6,22 @@ This project showcases
 
 This website showcased the back-end of implementing a booking application on the Little Lemon Website. This is a Django application for managing a restaurant's menu and bookings, which includes basic functionalities such as creating and viewing menu items, as well as handling reservations.
 
-Django: Web framework for backend development.
-Django REST Framework: API development framework built on top of Django.
-Pipenv: Virtual environment management tool.
-Djoser: Django REST Framework extension for user authentication.
-
-The project is composed of two apps, `api` and `restaurant`. The `api` app serves API endpoints of the project, while the `restaurant` app serves its frontend. The `config` (the project folder) directory holds the major settings of the project
+Django: Web framework for backend development. <br>
+Django REST Framework: API development framework built on top of Django. <br>
+Pipenv: Virtual environment management tool. <br>
+Djoser: Django REST Framework extension for user authentication. <br>
 
 
 <br> <br>
 
 # Installation
 
-install the dependencies
-pipenv install
+The project is composed of two apps, `api` and `restaurant`. The `api` app serves API endpoints of the project, while the `restaurant` app serves its frontend. The `config` (the project folder) directory holds the major settings of the project <br>
 
+install the dependencies
+```jsx
+pipenv install
+```
 
 Activate the virtual environment
 
