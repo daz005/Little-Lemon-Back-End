@@ -67,6 +67,7 @@ Each endpoint requires a SimpleJWT Token for authorization. Pass the token in th
 
 
 ### Endpoints for `api` app
+
 ```jsx
 http:127.0.0.1:8000/api/menu-items
 http:127.0.0.1:8000/api/menu-items/{menu-itemId}
@@ -117,6 +118,7 @@ http://127.0.0.1:8000/auth/users/reset_username/
 http://127.0.0.1:8000/auth/users/reset_username_confirm/
 ```
 <br>
+
 http://127.0.0.1:8000/auth/users/
 | Method | Action | STATUS CODE | TOKEN AUTH |
 | --- | --- | --- | --- |
@@ -130,6 +132,7 @@ http://127.0.0.1:8000/auth/users/
 http:127.0.0.1:8000/api/token/login/
 http:127.0.0.1:8000/api/token/refresh/
 ```
+
 <br>
 http://127.0.0.1:8000/api/token/login/
 | Method | Action | TOKEN AUTH | STATUS CODE |
@@ -145,6 +148,7 @@ http://127.0.0.1:8000/api/token/refresh/
 There are a total of 12 tests to ensure that each API endpoint and each of its allowed HTTP methods work properly.
 <br>
 Run the tests
+
 ```jsx
 python manage.py test
 ```
