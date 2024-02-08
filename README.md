@@ -160,6 +160,7 @@ Run the tests
 ```jsx
 python manage.py test
 ```
+
 <br>
 It should output something similar to this
 ```jsx
