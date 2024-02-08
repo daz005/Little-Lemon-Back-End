@@ -9,8 +9,7 @@ Django REST Framework: API development framework built on top of Django. <br>
 Pipenv: Virtual environment management tool. <br>
 Djoser: Django REST Framework extension for user authentication. <br>
 <br> <br>
-
-# Installation
+## Installation
 
 The project is composed of two apps, `api` and `restaurant`. The `api` app serves API endpoints of the project, while the `restaurant` app serves its frontend. The `config` (the project folder) directory holds the major settings of the project <br>
 
@@ -26,7 +25,7 @@ pipenv shell
 ```
 <br>
 
-# Setup
+## Setup
 The default database settings are
 
 ```jsx
@@ -44,7 +43,7 @@ DATABASES = {
     },
 }
 ```
-💡 Change those settings according to your local setup.
+
 <br>
 <br>
 
@@ -54,7 +53,7 @@ python manage.py migrate
 ```
 <br>
 
-# Environment Variables
+## Environment Variables
 For authenticated API requests in the view of the restaurant app, a username and password must be provided. Follow the instructions bellow <br>
 
 Inside the restaurant app folder, create a file called .env and place the code inside it
@@ -67,7 +66,7 @@ PASSWORD=your_password
 <aside>💡 Be aware that `django-environ` must be installed for this to work. Such dependency should be installed by running `pipenv install`</aside>
 <br> <br>
 
-# API Endpoints
+## API Endpoints
 The `api` app has a total of 4 endpoints. Additionally, `Djoser` and `SimpleJWT` endpoints are available.
 <br>
 
@@ -139,7 +138,7 @@ http://127.0.0.1:8000/auth/users/
 | GET | Retrieves all users | 200 | No |
 | POST | Creates a user | 201 | No |
 
-💡 Please refer to the [Djoser documentation](https://djoser.readthedocs.io/en/latest/getting_started.html#available-endpoints) for further usage on these endpoints.
+
 <br> <br>
 
 ### Endpoints for `simplejwt` app
@@ -161,7 +160,7 @@ http://127.0.0.1:8000/api/token/refresh/
 | POST | Generates a new access token | Yes | 201 |
 <br>
 
-# Testing
+## Testing
 There are a total of 12 tests to ensure that each API endpoint and each of its allowed HTTP methods work properly.
 <br>
 
@@ -185,4 +184,4 @@ Destroying test database for alias 'default'...
 ```
 <br>
 
-<aside>💡 These tests intrinsically test the `restaurant` models by creating entries on its database through the Django ORM.</aside>
+<aside>
