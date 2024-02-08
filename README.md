@@ -20,7 +20,6 @@ Activate the virtual environment
 ```jsx
 pipenv shell
 ```
-<br>
 
 ## Setup
 The default database settings are
@@ -57,7 +56,7 @@ PASSWORD=your_password
 ```
 <aside>
 <aside>
-<br> 
+
 
 ## API Endpoints
 The `api` app has a total of 4 endpoints. Additionally, `Djoser` and `SimpleJWT` endpoints are available.
@@ -66,7 +65,7 @@ Each endpoint requires a SimpleJWT Token for authorization. Pass the token in th
 ```jsx
 {'Authorization': 'JWT <token>'}
 ```
-<br>
+
 
 ### Endpoints for `api` app
 ```jsx
@@ -96,7 +95,6 @@ http:127.0.0.1:8000/api/bookings
 | GET | Retrieves all bookings | Yes | 200 |
 | POST | Creates a booking | Yes | 201 |
 <br>
-
 http:127.0.0.1:8000/api/bookings/{bookingId}
 | Method | Action | TOKEN AUTH | STATUS CODE |
 | --- | --- | --- | --- |
@@ -104,7 +102,7 @@ http:127.0.0.1:8000/api/bookings/{bookingId}
 | PUT | Update the booking | Yes | 200 |
 | PATCH | Partially update the booking | Yes | 200 |
 | DELETE | Delete the booking | Yes | 200 |
-<br>
+
 
 ### Endpoints for `djoser` app
 ```jsx
@@ -126,7 +124,6 @@ http://127.0.0.1:8000/auth/users/
 | GET | Retrieves all users | 200 | No |
 | POST | Creates a user | 201 | No |
 
-
 <br> 
 ### Endpoints for `simplejwt` app
 ```jsx
@@ -143,7 +140,7 @@ http://127.0.0.1:8000/api/token/refresh/
 | Method | Action | TOKEN AUTH | STATUS CODE |
 | --- | --- | --- | --- |
 | POST | Generates a new access token | Yes | 201 |
-<br>
+
 
 ## Testing
 There are a total of 12 tests to ensure that each API endpoint and each of its allowed HTTP methods work properly.
@@ -154,6 +151,7 @@ python manage.py test
 ```
 <br>
 It should output something similar to this
+
 ```jsx
 Found 12 test(s).
 Creating test database for alias 'default'...
