@@ -57,7 +57,7 @@ PASSWORD=your_password
 <aside>
 
 <aside>
-<br> 
+
 
 ## API Endpoints
 The `api` app has a total of 4 endpoints. Additionally, `Djoser` and `SimpleJWT` endpoints are available.
