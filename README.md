@@ -65,9 +65,7 @@ Each endpoint requires a SimpleJWT Token for authorization. Pass the token in th
 {'Authorization': 'JWT <token>'}
 ```
 
-
 ### Endpoints for `api` app
-
 ```jsx
 http:127.0.0.1:8000/api/menu-items
 http:127.0.0.1:8000/api/menu-items/{menu-itemId}
@@ -75,12 +73,14 @@ http:127.0.0.1:8000/api/bookings
 http:127.0.0.1:8000/api/bookings/{bookingId}
 ```
 <br>
+
 http:127.0.0.1:8000/api/menu-items
 | Method | Action | TOKEN AUTH | STATUS CODE |
 | --- | --- | --- | --- |
 | GET | Retrieves all menu items | Yes | 200 |
 | POST | Creates a menu item | Yes | 201 |
 <br>
+
 http:127.0.0.1:8000/api/menu-items/{menu-itemId}
 | Method | Action | TOKEN AUTH | STATUS CODE |
 | --- | --- | --- | --- |
@@ -89,12 +89,14 @@ http:127.0.0.1:8000/api/menu-items/{menu-itemId}
 | PATCH | Partially update the menu item | Yes | 200 |
 | DELETE | Delete the menu item | Yes | 200 |
 <br>
+
 http:127.0.0.1:8000/api/bookings
 | Method | Action | TOKEN AUTH | STATUS CODE |
 | --- | --- | --- | --- |
 | GET | Retrieves all bookings | Yes | 200 |
 | POST | Creates a booking | Yes | 201 |
 <br>
+
 http:127.0.0.1:8000/api/bookings/{bookingId}
 | Method | Action | TOKEN AUTH | STATUS CODE |
 | --- | --- | --- | --- |
@@ -102,8 +104,7 @@ http:127.0.0.1:8000/api/bookings/{bookingId}
 | PUT | Update the booking | Yes | 200 |
 | PATCH | Partially update the booking | Yes | 200 |
 | DELETE | Delete the booking | Yes | 200 |
-
-
+<br>
 ### Endpoints for `simplejwt` app
 ```jsx
 http:127.0.0.1:8000/api/token/login/
