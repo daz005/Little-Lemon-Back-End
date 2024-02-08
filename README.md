@@ -127,32 +127,34 @@ http://127.0.0.1:8000/auth/users/
 
 <br> 
 ### Endpoints for `simplejwt` app
-
 ```jsx
 http:127.0.0.1:8000/api/token/login/
 http:127.0.0.1:8000/api/token/refresh/
 ```
-
 <br>
+
 http://127.0.0.1:8000/api/token/login/
 | Method | Action | TOKEN AUTH | STATUS CODE |
 | --- | --- | --- | --- |
 | POST | Generates access token and refresh token | Yes | 201 |
 <br>
+
 http://127.0.0.1:8000/api/token/refresh/
 | Method | Action | TOKEN AUTH | STATUS CODE |
 | --- | --- | --- | --- |
 | POST | Generates a new access token | Yes | 201 |
+<br>
 
-## Testing
+# Testing
 There are a total of 12 tests to ensure that each API endpoint and each of its allowed HTTP methods work properly.
 <br>
-Run the tests
 
+Run the tests
 ```jsx
 python manage.py test
 ```
 <br>
+
 It should output something similar to this
 
 ```jsx
