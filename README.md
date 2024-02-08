@@ -57,7 +57,7 @@ PASSWORD=your_password
 <aside>
 
 <aside>
-
+<br>
 
 ## API Endpoints
 The `api` app has a total of 4 endpoints. Additionally, `Djoser` and `SimpleJWT` endpoints are available.
@@ -67,7 +67,7 @@ Each endpoint requires a SimpleJWT Token for authorization. Pass the token in th
 ```jsx
 {'Authorization': 'JWT <token>'}
 ```
-
+<br>
 
 ### Endpoints for `api` app
 ```jsx
