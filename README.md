@@ -39,7 +39,6 @@ DATABASES = {
     },
 }
 ```
-
 <br>
 <br>
 
@@ -48,7 +47,6 @@ Apply the migrations
 python manage.py migrate
 ```
 <br>
-
 ## Environment Variables
 For authenticated API requests in the view of the restaurant app, a username and password must be provided. Follow the instructions bellow <br>
 
@@ -57,15 +55,13 @@ Inside the restaurant app folder, create a file called .env and place the code i
 USERNAME=your_username
 PASSWORD=your_password
 ```
-<aside>💡 replace "your_username" and "your_password" with a valid username and password respectively</aside>
-
-<aside>💡 Be aware that `django-environ` must be installed for this to work. Such dependency should be installed by running `pipenv install`</aside>
-<br> <br>
+<aside>
+<aside>
+<br> 
 
 ## API Endpoints
 The `api` app has a total of 4 endpoints. Additionally, `Djoser` and `SimpleJWT` endpoints are available.
 <br>
-
 Each endpoint requires a SimpleJWT Token for authorization. Pass the token in the header of the request such as
 ```jsx
 {'Authorization': 'JWT <token>'}
@@ -80,14 +76,12 @@ http:127.0.0.1:8000/api/bookings
 http:127.0.0.1:8000/api/bookings/{bookingId}
 ```
 <br>
-
 http:127.0.0.1:8000/api/menu-items
 | Method | Action | TOKEN AUTH | STATUS CODE |
 | --- | --- | --- | --- |
 | GET | Retrieves all menu items | Yes | 200 |
 | POST | Creates a menu item | Yes | 201 |
 <br>
-
 http:127.0.0.1:8000/api/menu-items/{menu-itemId}
 | Method | Action | TOKEN AUTH | STATUS CODE |
 | --- | --- | --- | --- |
@@ -96,7 +90,6 @@ http:127.0.0.1:8000/api/menu-items/{menu-itemId}
 | PATCH | Partially update the menu item | Yes | 200 |
 | DELETE | Delete the menu item | Yes | 200 |
 <br>
-
 http:127.0.0.1:8000/api/bookings
 | Method | Action | TOKEN AUTH | STATUS CODE |
 | --- | --- | --- | --- |
@@ -127,7 +120,6 @@ http://127.0.0.1:8000/auth/users/reset_username/
 http://127.0.0.1:8000/auth/users/reset_username_confirm/
 ```
 <br>
-
 http://127.0.0.1:8000/auth/users/
 | Method | Action | STATUS CODE | TOKEN AUTH |
 | --- | --- | --- | --- |
@@ -135,21 +127,18 @@ http://127.0.0.1:8000/auth/users/
 | POST | Creates a user | 201 | No |
 
 
-<br> <br>
-
+<br> 
 ### Endpoints for `simplejwt` app
 ```jsx
 http:127.0.0.1:8000/api/token/login/
 http:127.0.0.1:8000/api/token/refresh/
 ```
 <br>
-
 http://127.0.0.1:8000/api/token/login/
 | Method | Action | TOKEN AUTH | STATUS CODE |
 | --- | --- | --- | --- |
 | POST | Generates access token and refresh token | Yes | 201 |
 <br>
-
 http://127.0.0.1:8000/api/token/refresh/
 | Method | Action | TOKEN AUTH | STATUS CODE |
 | --- | --- | --- | --- |
@@ -159,13 +148,11 @@ http://127.0.0.1:8000/api/token/refresh/
 ## Testing
 There are a total of 12 tests to ensure that each API endpoint and each of its allowed HTTP methods work properly.
 <br>
-
 Run the tests
 ```jsx
 python manage.py test
 ```
 <br>
-
 It should output something similar to this
 ```jsx
 Found 12 test(s).
@@ -173,7 +160,7 @@ Creating test database for alias 'default'...
 System check identified no issues (0 silenced).
 ............
 ----------------------------------------------------------------------
-Ran 12 tests in 6.024s
+Ran 12 tests in 6.036s
 
 OK
 Destroying test database for alias 'default'...
