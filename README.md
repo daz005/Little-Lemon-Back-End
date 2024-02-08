@@ -51,7 +51,7 @@ For authenticated API requests in the view of the restaurant app, a username and
 
 Inside the restaurant app folder, create a file called .env and place the code inside it
 ```jsx
-USERNAME=yout_username
+USERNAME=your_username
 PASSWORD=your_password
 ```
 <aside>
@@ -161,7 +161,6 @@ Run the tests
 python manage.py test
 ```
 <br>
-
 It should output something similar to this
 ```jsx
 Found 12 test(s).
